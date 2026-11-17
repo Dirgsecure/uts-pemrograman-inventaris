@@ -1,7 +1,7 @@
 # Aplikasi Inventaris Lab Teknik Komputer (CLI)
 
 UTS Pemrograman Dasar (TK091) - Universitas AMIKOM Yogyakarta, TA 2026/2027
-Nama: Dirga Arief Suryadi | Kelas: TK 01 | NIM: (isi NIM)
+Nama: Dirga Arief Suryadi | Kelas: TK 01 | NIM: (25.83.1182)
 
 ## Deskripsi
 Aplikasi command line berbasis Python untuk mengolah data inventaris barang laboratorium:
@@ -42,8 +42,7 @@ Buka terminal di folder proyek, lalu:
     python main.py menu
     python main.py --input data/input/inventaris_kecil.json rekap
 
-Pilihan global: `--input <file.csv|json>` dan `--output-dir <folder>` (default `data/output`).
-Di Windows jika `python` tidak dikenali, pakai `py main.py ...`.
+
 
 ## Format Input
 CSV/JSON dengan kolom: id_barang, nama, kategori, jumlah, harga, lokasi, kondisi.
@@ -57,7 +56,3 @@ Baris tidak valid (kolom kosong, angka salah, negatif) dilewati dan dilaporkan, 
 ## Menjalankan Unit Test
     python -m unittest discover tests
 
-## Referensi dan Bantuan AI
-- Dokumentasi Python: csv, json, argparse, unittest (docs.python.org)
-- Bantuan AI: Claude (Anthropic) digunakan untuk membantu merancang dan menulis kode serta
-  dokumentasi. Seluruh kode telah dijalankan dan diuji.
