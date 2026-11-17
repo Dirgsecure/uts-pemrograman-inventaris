@@ -1,0 +1,9 @@
+{
+  "valid_unik": 9,
+  "duplikat": 1,
+  "error": [
+    "baris 11: jumlah/harga bukan angka (jumlah='dua puluh', harga='25000')",
+    "baris 12: jumlah/harga tidak boleh negatif",
+    "baris 13: kolom kosong ['lokasi']"
+  ]
+}

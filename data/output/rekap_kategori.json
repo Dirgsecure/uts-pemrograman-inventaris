@@ -1,0 +1,35 @@
+{
+  "rekap": {
+    "Aksesoris": {
+      "jenis": 2,
+      "total_unit": 33,
+      "total_nilai": 5100000
+    },
+    "Elektronik": {
+      "jenis": 2,
+      "total_unit": 7,
+      "total_nilai": 13875000
+    },
+    "Jaringan": {
+      "jenis": 1,
+      "total_unit": 0,
+      "total_nilai": 0
+    },
+    "Komputer": {
+      "jenis": 1,
+      "total_unit": 12,
+      "total_nilai": 102000000
+    },
+    "Mikrokontroler": {
+      "jenis": 2,
+      "total_unit": 29,
+      "total_nilai": 6800000
+    },
+    "Sensor": {
+      "jenis": 1,
+      "total_unit": 40,
+      "total_nilai": 1800000
+    }
+  },
+  "total_nilai": 129575000
+}

@@ -1,0 +1,65 @@
+$ python main.py --input data/input/tidak_ada.csv ringkasan
+[ERROR] File tidak ditemukan: data/input/tidak_ada.csv
+exit code: 1
+
+$ python main.py --input data/input/rusak.json ringkasan
+[ERROR] JSON rusak di data/input/rusak.json: Expecting property name enclosed in double quotes: line 2 column 1 (char 22)
+exit code: 1
+
+$ python main.py --input data/input/data.txt ringkasan
+[ERROR] Ekstensi '.txt' tidak didukung (pakai .csv/.json)
+exit code: 1
+
+$ python main.py stok-rendah --batas -1
+[ERROR] --batas tidak boleh negatif
+exit code: 1
+
+$ python main.py stok-rendah --batas abc
+usage: main.py stok-rendah [-h] [--batas BATAS]
+main.py stok-rendah: error: argument --batas: invalid int value: 'abc'
+exit code: 2
+
+$ menu interaktif dengan input salah (pilihan "9", batas "abc", "-2", lalu "3")
+
+=== MENU INVENTARIS LAB ===
+1. Lihat semua barang
+2. Cari barang
+3. Stok rendah
+4. Rekap per kategori
+0. Keluar
+Pilih menu:   ! Pilihan tidak dikenal, coba lagi.
+
+=== MENU INVENTARIS LAB ===
+1. Lihat semua barang
+2. Cari barang
+3. Stok rendah
+4. Rekap per kategori
+0. Keluar
+Pilih menu: Batas stok [default 5]:   ! Masukkan angka bulat, contoh: 5
+Batas stok [default 5]:   ! Angka tidak boleh negatif
+Batas stok [default 5]: ID     Nama                    Kategori        Jml  Status  
+B008   Router Mikrotik         Jaringan          0  HABIS   
+B007   Proyektor Epson         Elektronik        2  MENIPIS 
+B003   Keyboard Rexus          Aksesoris         3  MENIPIS 
+
+=== MENU INVENTARIS LAB ===
+1. Lihat semua barang
+2. Cari barang
+3. Stok rendah
+4. Rekap per kategori
+0. Keluar
+Pilih menu: - Aksesoris: 2 jenis, 33 unit, nilai Rp5.100.000
+- Elektronik: 2 jenis, 7 unit, nilai Rp13.875.000
+- Jaringan: 1 jenis, 0 unit, nilai Rp0
+- Komputer: 1 jenis, 12 unit, nilai Rp102.000.000
+- Mikrokontroler: 2 jenis, 29 unit, nilai Rp6.800.000
+- Sensor: 1 jenis, 40 unit, nilai Rp1.800.000
+Total nilai aset: Rp129.575.000
+
+=== MENU INVENTARIS LAB ===
+1. Lihat semua barang
+2. Cari barang
+3. Stok rendah
+4. Rekap per kategori
+0. Keluar
+Pilih menu: Sampai jumpa.

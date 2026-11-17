@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/claude/uts_inventaris/docs/debug_demo.py", line 7, in <module>
+    total += int(baris["jumlah"]) * int(baris["harga"])   # BUG: tidak ada validasi
+             ^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'dua puluh'

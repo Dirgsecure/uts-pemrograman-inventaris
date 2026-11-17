@@ -1,0 +1,4 @@
+[
+  {"id_barang": "J001", "nama": "Switch TP-Link 8 Port", "kategori": "Jaringan", "jumlah": 6, "harga": 220000, "lokasi": "Lab Jaringan", "kondisi": "Baik"},
+  {"id_barang": "J002", "nama": "Crimping Tool", "kategori": "Jaringan", "jumlah": 2, "harga": 90000, "lokasi": "Lab Jaringan", "kondisi": "Baik"}
+]

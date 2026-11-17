@@ -1,0 +1,14 @@
+id_barang,nama,kategori,jumlah,harga,lokasi,kondisi
+B001,Laptop Asus Vivobook,Komputer,12,8500000,Lab 1,Baik
+B002,Mouse Logitech,Aksesoris,30,150000,Lab 1,Baik
+B003,Keyboard Rexus,Aksesoris,3,200000,Gudang,Baik
+B004,Arduino Uno R3,Mikrokontroler,25,120000,Lab IoT,Baik
+B005,Raspberry Pi 4,Mikrokontroler,4,950000,Lab IoT,Baik
+B006,Sensor DHT22,Sensor,40,45000,Lab IoT,Baik
+B007,Proyektor Epson,Elektronik,2,6500000,Lab 2,Rusak Ringan
+B003,Keyboard Rexus,Aksesoris,3,200000,Gudang,Baik
+B008,Router Mikrotik,Jaringan,0,700000,Lab Jaringan,Habis
+B009,Kabel LAN Cat6,Jaringan,dua puluh,25000,Lab Jaringan,Baik
+B010,Monitor LG 24 inch,Komputer,-5,1800000,Lab 2,Baik
+B011,Breadboard 830,Mikrokontroler,15,20000,,Baik
+B012,Multimeter Digital,Elektronik,5,175000,Lab 1,Baik

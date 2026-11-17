@@ -1,0 +1,47 @@
+$ python main.py ringkasan
+Barang valid & unik : 9
+Duplikat dibuang    : 1 -> ['B003']
+Baris error         : 3
+  ! baris 11: jumlah/harga bukan angka (jumlah='dua puluh', harga='25000')
+  ! baris 12: jumlah/harga tidak boleh negatif
+  ! baris 13: kolom kosong ['lokasi']
+Kategori            : ['Aksesoris', 'Elektronik', 'Jaringan', 'Komputer', 'Mikrokontroler', 'Sensor']
+
+$ python main.py cari laptop
+ID     Nama                    Kategori        Jml  Status  
+B001   Laptop Asus Vivobook    Komputer         12  AMAN    
+
+$ python main.py cari xyz   (edge case: tidak ada hasil)
+(tidak ada data)
+
+$ python main.py stok-rendah --batas 5
+ID     Nama                    Kategori        Jml  Status  
+B008   Router Mikrotik         Jaringan          0  HABIS   
+B007   Proyektor Epson         Elektronik        2  MENIPIS 
+B003   Keyboard Rexus          Aksesoris         3  MENIPIS 
+B005   Raspberry Pi 4          Mikrokontroler    4  MENIPIS 
+B012   Multimeter Digital      Elektronik        5  MENIPIS 
+
+$ python main.py rekap
+- Aksesoris: 2 jenis, 33 unit, nilai Rp5.100.000
+- Elektronik: 2 jenis, 7 unit, nilai Rp13.875.000
+- Jaringan: 1 jenis, 0 unit, nilai Rp0
+- Komputer: 1 jenis, 12 unit, nilai Rp102.000.000
+- Mikrokontroler: 2 jenis, 29 unit, nilai Rp6.800.000
+- Sensor: 1 jenis, 40 unit, nilai Rp1.800.000
+Total nilai aset: Rp129.575.000
+Tersimpan: data/output/rekap_kategori.json
+
+$ python main.py bersihkan
+Tersimpan 9 baris bersih ke data/output/inventaris_bersih.csv
+
+$ python main.py --input data/input/inventaris_kecil.json rekap --- (input JSON)
+- Jaringan: 2 jenis, 8 unit, nilai Rp1.500.000
+Total nilai aset: Rp1.500.000
+Tersimpan: data/output/json/rekap_kategori.json
+
+$ python main.py --input data/input/kosong.csv rekap   (edge case: data kosong)
+(rekap kosong: tidak ada data)
+Total nilai aset: Rp0
+Tersimpan: data/output/kosong/rekap_kategori.json
+
